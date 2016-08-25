@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>io.kilian.n26</string>
+	<string>io.kilian.alfred_n26</string>
 	<key>connections</key>
 	<dict/>
 	<key>createdby</key>
@@ -34,9 +34,9 @@
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading...</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -44,9 +44,9 @@
 				<key>scriptfile</key>
 				<string>index.js</string>
 				<key>subtext</key>
-				<string></string>
+				<string>List your latest n26 transactions</string>
 				<key>title</key>
-				<string>List recent N26 transactions</string>
+				<string>N26</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>

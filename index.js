@@ -1,9 +1,23 @@
 #! /usr/local/bin/node
 
 const N26 = require('n26')
+const fs = require('fs')
 
-const myAccount = new N26('username', 'password')
-  .then(account => account.transactions(/*{text: 'searchstring'}*/)
+const auth = JSON.parse(fs.readFileSync('./auth.json', 'utf8'))
+
+const myAccount = new N26(auth.username, auth.password)
+  .then(account => account.transactions() // {text: 'searchstring'}
   .then(transactions => {
-    console.log(transactions)
+    let items = transactions.map(trans => {
+      return {
+        'title': trans.merchantName
+      }
+    })
+    console.log(JSON.stringify(toAlfred(items)))
   }))
+
+function toAlfred(items) {
+  return {
+    'items': items
+  }
+}
