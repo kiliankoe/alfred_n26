@@ -1,7 +1,7 @@
 {
   "name": "alfred_n26",
   "version": "0.1.0",
-  "description": "💳 Interact with your N26 account from Alfred",
+  "description": "💳 Access your N26 account from Alfred",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +16,7 @@
     "money",
     "banking",
     "alfred",
+    "alfredapp",
     "workflow"
   ],
   "author": "Kilian Koeltzsch",
