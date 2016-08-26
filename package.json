@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/kiliankoe/alfred_n26#readme",
   "dependencies": {
+    "format-currency": "^1.0.0",
+    "moment": "^2.14.1",
     "n26": "^1.3.2"
   }
 }
